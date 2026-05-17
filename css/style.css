@@ -105,21 +105,22 @@ a { color: inherit; text-decoration: none; }
 /* ---- Navigation ---- */
 nav {
   position: fixed;
-  inset: 0 0 auto 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   padding: 1.6rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: background 0.5s, padding 0.4s, border-color 0.5s;
-  border-bottom: 1px solid transparent;
+  transition: background 0.5s ease, padding 0.4s ease, box-shadow 0.5s ease;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 nav.scrolled {
   background: rgba(14,6,3,0.96);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
   padding: 1rem 3rem;
-  border-color: var(--gold-border);
+  box-shadow: 0 1px 0 var(--gold-border);
 }
 
 .nav-logo {
