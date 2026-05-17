@@ -557,6 +557,9 @@ footer {
   margin-bottom: 2.5rem;
 }
 .footer-links {
+  position: static;
+  padding: 0;
+  transition: none;
   display: flex;
   justify-content: center;
   gap: 2.5rem;
