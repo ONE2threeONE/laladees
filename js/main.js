@@ -27,8 +27,8 @@ if (navToggle && navOverlay) {
 // Hero parallax
 const heroBg = document.querySelector('.hero .hero-bg');
 if (heroBg) {
-  window.addEventListener('scroll', () => {
-    heroBg.style.transform = 'translateY(' + (window.scrollY * 0.38) + 'px)';
+  window.addEventListener('scroll', function() {
+    heroBg.style.backgroundPositionY = (window.scrollY * 0.35) + 'px';
   }, { passive: true });
 }
 

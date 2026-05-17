@@ -114,7 +114,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   transition: background 0.5s ease, padding 0.4s ease;
-  will-change: background, padding;
+  isolation: isolate;
 }
 nav.scrolled {
   background: rgba(14,6,3,0.96);
