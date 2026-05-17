@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations | LaLa Dee's Italian Steakhouse</title>
+  <meta name="description" content="Reserve your table at LaLa Dee's Italian Steakhouse. Book online or call us directly." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo" aria-label="LaLa Dee's">
+      <span class="nav-logo-script">LaLa Dee's</span>
+      <span class="nav-logo-sub">Italian Steakhouse</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html" class="active">Reservations</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="nav-overlay" aria-hidden="true">
+    <div class="nav-overlay-script">LaLa Dee's</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-label fade-in">Join Us for an Evening</span>
+      <h1 class="section-title fade-up delay-1" style="margin-top:0.6rem;font-size:clamp(2.5rem,7vw,5rem);">Reservations</h1>
+      <div class="gold-ornament fade-in delay-2" style="max-width:300px;margin:1rem auto 0;"><span>✦</span></div>
+    </div>
+  </section>
+
+  <!-- Contact Strip -->
+  <div class="contact-strip">
+    <div class="contact-strip-inner">
+      <div class="contact-item fade-up">
+        <h4>By Phone</h4>
+        <p><a href="tel:5550000000">(555) 000-0000</a><br />Tuesday through Sunday<br />3:00 PM to 10:00 PM</p>
+      </div>
+      <div class="contact-item fade-up delay-1">
+        <h4>Location</h4>
+        <p>1st &amp; Main<br />Old Town Scottsdale, AZ 85251<br /><a href="https://maps.google.com/?q=1st+and+Main+Old+Town+Scottsdale+AZ+85251" target="_blank" rel="noopener">Get Directions</a></p>
+      </div>
+      <div class="contact-item fade-up delay-2">
+        <h4>Private Events</h4>
+        <p>For parties of 10 or more,<br />contact us directly at<br /><a href="mailto:events@laladeesitaliana.com">events@laladeesitaliana.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation Form -->
+  <section class="res-section">
+    <div style="text-align:center;margin-bottom:0.5rem;">
+      <span class="section-label fade-in">Reserve Your Table</span>
+      <h2 class="section-title fade-up delay-1" style="margin-top:0.6rem;">Book Online</h2>
+      <p class="fade-up delay-2" style="font-family:var(--font-serif);font-style:italic;color:var(--text-muted);margin-top:1rem;font-size:1rem;">
+        We'll confirm your reservation within 24 hours. For same-day reservations, please call us directly.
+      </p>
+    </div>
+
+    <form class="res-form fade-up delay-2" novalidate>
+      <div class="form-group">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Maria" required />
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Rossi" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="maria@email.com" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" />
+      </div>
+      <div class="form-group">
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+      <div class="form-group">
+        <label for="time">Preferred Time</label>
+        <select id="time" name="time" required>
+          <option value="" disabled selected>Select a time</option>
+          <option>5:00 PM</option>
+          <option>5:30 PM</option>
+          <option>6:00 PM</option>
+          <option>6:30 PM</option>
+          <option>7:00 PM</option>
+          <option>7:30 PM</option>
+          <option>8:00 PM</option>
+          <option>8:30 PM</option>
+          <option>9:00 PM</option>
+          <option>9:30 PM</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="guests">Number of Guests</label>
+        <select id="guests" name="guests" required>
+          <option value="" disabled selected>Select party size</option>
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4 Guests</option>
+          <option>5 Guests</option>
+          <option>6 Guests</option>
+          <option>7 Guests</option>
+          <option>8 Guests</option>
+          <option>9 Guests</option>
+          <option>Large Party (10+), we will reach out to confirm</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="occasion">Special Occasion</label>
+        <select id="occasion" name="occasion">
+          <option value="" disabled selected>Select if applicable</option>
+          <option>No special occasion</option>
+          <option>Birthday</option>
+          <option>Anniversary</option>
+          <option>Date Night</option>
+          <option>Business Dinner</option>
+          <option>Celebration</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label for="requests">Special Requests or Dietary Notes</label>
+        <textarea id="requests" name="requests" placeholder="Allergies, dietary restrictions, preferred seating, special arrangements…"></textarea>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn btn-fill">Reserve Your Table</button>
+        <p class="form-note">
+          By submitting this form you agree to be contacted by LaLa Dee's regarding your reservation.
+          We look forward to welcoming you.
+        </p>
+      </div>
+    </form>
+  </section>
+
+  <!-- Hours Section -->
+  <section class="hours" style="border-top: 1px solid var(--gold-border);">
+    <span class="section-label fade-in">When to Find Us</span>
+    <h2 class="section-title fade-up delay-1" style="margin-top:0.5rem;">Hours of Operation</h2>
+    <div class="hours-grid">
+      <div class="hours-item fade-up delay-1">
+        <h4>Tuesday through Thursday</h4>
+        <p>Dinner<br />5:00 PM to 10:00 PM</p>
+      </div>
+      <div class="hours-divider"></div>
+      <div class="hours-item fade-up delay-2">
+        <h4>Friday and Saturday</h4>
+        <p>Dinner<br />5:00 PM to 11:00 PM<br /><br />Bar<br />Until Midnight</p>
+      </div>
+      <div class="hours-divider"></div>
+      <div class="hours-item fade-up delay-3">
+        <h4>Sunday</h4>
+        <p>Dinner<br />5:00 PM to 9:00 PM</p>
+        <p style="margin-top:1rem;font-size:0.85rem;opacity:0.6;">Closed Monday</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">LaLa Dee's</div>
+    <p class="footer-tagline">Italian Steakhouse &nbsp;·&nbsp; Est. 2025</p>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">Our Story</a>
+      <a href="reservations.html">Reservations</a>
+    </nav>
+    <p class="footer-address">
+      1st &amp; Main &nbsp;·&nbsp; Old Town Scottsdale, AZ 85251<br />
+      (555) 000-0000 &nbsp;·&nbsp; hello@laladeesitaliana.com
+    </p>
+    <p class="footer-copy">&copy; 2025 LaLa Dee's Italian Steakhouse. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Original source images in root (copies live in images/ folder)
+/Karen and Laura.png
+/Karen.png
+/LALA DEES.png
+/LALA DEES copy.png
+/Laura and Karen 2.png
+/Laura.png
+
+# Unused duplicate
+/images/logo.png
+
+# macOS
+.DS_Store

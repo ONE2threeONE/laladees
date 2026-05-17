@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | LaLa Dee's Italian Steakhouse</title>
+  <meta name="description" content="Explore the LaLa Dee's menu. Prime steaks, handmade pasta, fresh seafood, and classic Italian antipasti in Old Town Scottsdale." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo" aria-label="LaLa Dee's">
+      <span class="nav-logo-script">LaLa Dee's</span>
+      <span class="nav-logo-sub">Italian Steakhouse</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="nav-overlay" aria-hidden="true">
+    <div class="nav-overlay-script">LaLa Dee's</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-label fade-in">LaLa Dee's</span>
+      <h1 class="section-title fade-up delay-1" style="margin-top:0.6rem;font-size:clamp(2.5rem,7vw,5rem);">The Menu</h1>
+      <div class="gold-ornament fade-in delay-2" style="max-width:300px;margin:1rem auto 0;"><span>✦</span></div>
+    </div>
+  </section>
+
+  <!-- Menu Subnav -->
+  <div class="menu-subnav">
+    <a href="#antipasti">Antipasti</a>
+    <a href="#pasta">Pasta</a>
+    <a href="#bistecca">Bistecca</a>
+    <a href="#frutti-di-mare">Frutti di Mare</a>
+    <a href="#contorni">Contorni</a>
+    <a href="#dolci">Dolci</a>
+  </div>
+
+  <!-- Antipasti -->
+  <section class="menu-cat" id="antipasti">
+    <div class="menu-cat-inner">
+      <div class="menu-cat-header">
+        <span class="section-label fade-in">To Begin</span>
+        <h2 class="section-title fade-up delay-1">Antipasti</h2>
+        <span class="menu-cat-italian fade-in delay-2">First Courses &amp; Starters</span>
+        <div class="gold-ornament fade-in delay-2" style="max-width:400px;margin:1rem auto 0;"><span>✦</span></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Burrata con Pomodori</p>
+            <p class="menu-item-desc">Fresh burrata, heirloom tomatoes, Genovese basil oil, aged balsamic reduction</p>
+          </div>
+          <span class="menu-item-price">$18</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Carpaccio di Manzo</p>
+            <p class="menu-item-desc">Thinly sliced A5 Wagyu, arugula, shaved Parmigiano Reggiano, black truffle aioli, capers</p>
+          </div>
+          <span class="menu-item-price">$28</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Fritto di Calamari</p>
+            <p class="menu-item-desc">Golden fried calamari, lemon-herb aioli, San Marzano marinara</p>
+          </div>
+          <span class="menu-item-price">$19</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Cozze al Vino Bianco</p>
+            <p class="menu-item-desc">Steamed PEI mussels, white wine, garlic, cherry tomatoes, grilled ciabatta</p>
+          </div>
+          <span class="menu-item-price">$22</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Insalata Cesare</p>
+            <p class="menu-item-desc">Romaine hearts, house Caesar dressing, white anchovies, Parmigiano crisps</p>
+          </div>
+          <span class="menu-item-price">$16</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Caprese al Tartufo</p>
+            <p class="menu-item-desc">Buffalo mozzarella, heirloom tomato, Calabrian chili, black truffle oil, micro basil</p>
+          </div>
+          <span class="menu-item-price">$21</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pasta -->
+  <section class="menu-cat" id="pasta">
+    <div class="menu-cat-inner">
+      <div class="menu-cat-header">
+        <span class="section-label fade-in">Handmade Daily</span>
+        <h2 class="section-title fade-up delay-1">La Pasta</h2>
+        <span class="menu-cat-italian fade-in delay-2">All pastas are made fresh in-house each morning</span>
+        <div class="gold-ornament fade-in delay-2" style="max-width:400px;margin:1rem auto 0;"><span>✦</span></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Tagliatelle al Ragù Bolognese</p>
+            <p class="menu-item-desc">Hand-rolled tagliatelle, eight-hour veal &amp; pork ragù, Parmigiano Reggiano</p>
+          </div>
+          <span class="menu-item-price">$32</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Rigatoni all'Amatriciana</p>
+            <p class="menu-item-desc">Guanciale, San Marzano tomatoes, Pecorino Romano, fresh chili, white wine</p>
+          </div>
+          <span class="menu-item-price">$28</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Linguine alle Vongole</p>
+            <p class="menu-item-desc">Manila clams, dry white wine, roasted garlic, parsley, chili flakes, extra-virgin olive oil</p>
+          </div>
+          <span class="menu-item-price">$34</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Gnocchi ai Funghi Porcini</p>
+            <p class="menu-item-desc">Pillowy ricotta gnocchi, wild porcini mushrooms, truffle cream, sage, Parmigiano</p>
+          </div>
+          <span class="menu-item-price">$36</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Pappardelle all'Aragosta</p>
+            <p class="menu-item-desc">Wide ribbon pasta, Maine lobster, San Marzano cream, cognac, tarragon. Our signature.</p>
+          </div>
+          <span class="menu-item-price">$52</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Cacio e Pepe al Tartufo</p>
+            <p class="menu-item-desc">Tonnarelli, Pecorino, Parmigiano, cracked black pepper, shaved black truffle</p>
+          </div>
+          <span class="menu-item-price">$38</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bistecca -->
+  <section class="menu-cat" id="bistecca">
+    <div class="menu-cat-inner">
+      <div class="menu-cat-header">
+        <span class="section-label fade-in">From the Fire</span>
+        <h2 class="section-title fade-up delay-1">Bistecca</h2>
+        <span class="menu-cat-italian fade-in delay-2">Prime Steaks &amp; Chops · All steaks served with house sauce selection</span>
+        <div class="gold-ornament fade-in delay-2" style="max-width:400px;margin:1rem auto 0;"><span>✦</span></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Bistecca alla Fiorentina</p>
+            <p class="menu-item-desc">32 oz T-bone, dry-aged 28 days, rosemary-infused olive oil, Maldon sea salt. For two.</p>
+          </div>
+          <span class="menu-item-price">$145</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Filetto di Manzo</p>
+            <p class="menu-item-desc">10 oz center-cut USDA Prime filet mignon, roasted garlic compound butter, thyme jus</p>
+          </div>
+          <span class="menu-item-price">$68</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">NY Strip LaLa Dee's</p>
+            <p class="menu-item-desc">14 oz USDA Prime New York strip, housemade bordelaise, crispy shallots</p>
+          </div>
+          <span class="menu-item-price">$72</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Costata Wagyu</p>
+            <p class="menu-item-desc">16 oz A5 Japanese Wagyu ribeye, black truffle compound butter, fleur de sel</p>
+          </div>
+          <span class="menu-item-price">$195</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Tomahawk Imperiale</p>
+            <p class="menu-item-desc">40 oz USDA Prime tomahawk, herb-bone marrow crust, natural au jus. For two.</p>
+          </div>
+          <span class="menu-item-price">$195</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Tagliata di Manzo</p>
+            <p class="menu-item-desc">Sliced sirloin over arugula, shaved Parmigiano, cherry tomatoes, truffle oil</p>
+          </div>
+          <span class="menu-item-price">$58</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frutti di Mare -->
+  <section class="menu-cat" id="frutti-di-mare">
+    <div class="menu-cat-inner">
+      <div class="menu-cat-header">
+        <span class="section-label fade-in">From the Sea</span>
+        <h2 class="section-title fade-up delay-1">Frutti di Mare</h2>
+        <span class="menu-cat-italian fade-in delay-2">Fresh Seafood · Sourced daily</span>
+        <div class="gold-ornament fade-in delay-2" style="max-width:400px;margin:1rem auto 0;"><span>✦</span></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Branzino alla Griglia</p>
+            <p class="menu-item-desc">Whole roasted Mediterranean sea bass, lemon, capers, Castelvetrano olives, herbs</p>
+          </div>
+          <span class="menu-item-price">$54</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Aragosta Termidore</p>
+            <p class="menu-item-desc">Butter-poached Maine lobster tail, cognac cream, Gruyère gratin, tarragon</p>
+          </div>
+          <span class="menu-item-price">$82</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Gamberi al Scampi</p>
+            <p class="menu-item-desc">Jumbo Gulf shrimp, white wine, roasted garlic, calabrian butter, lemon, grilled bread</p>
+          </div>
+          <span class="menu-item-price">$46</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Halibut in Crosta</p>
+            <p class="menu-item-desc">Pacific halibut, herb-pistachio crust, saffron beurre blanc, grilled asparagus</p>
+          </div>
+          <span class="menu-item-price">$58</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Tonno alla Siciliana</p>
+            <p class="menu-item-desc">Seared ahi tuna, Sicilian caponata, olive tapenade, pine nuts, raisins, mint oil</p>
+          </div>
+          <span class="menu-item-price">$54</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contorni -->
+  <section class="menu-cat" id="contorni">
+    <div class="menu-cat-inner">
+      <div class="menu-cat-header">
+        <span class="section-label fade-in">On the Side</span>
+        <h2 class="section-title fade-up delay-1">Contorni</h2>
+        <span class="menu-cat-italian fade-in delay-2">Side Dishes</span>
+        <div class="gold-ornament fade-in delay-2" style="max-width:400px;margin:1rem auto 0;"><span>✦</span></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Patate al Forno</p>
+            <p class="menu-item-desc">Roasted fingerling potatoes, rosemary, garlic, fleur de sel</p>
+          </div>
+          <span class="menu-item-price">$12</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Spinaci all'Aglio</p>
+            <p class="menu-item-desc">Wilted baby spinach, toasted garlic, extra-virgin olive oil, chili flakes</p>
+          </div>
+          <span class="menu-item-price">$11</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Asparagi alla Griglia</p>
+            <p class="menu-item-desc">Grilled asparagus, shaved Parmigiano Reggiano, lemon zest</p>
+          </div>
+          <span class="menu-item-price">$13</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Funghi Trifolati</p>
+            <p class="menu-item-desc">Mixed wild mushrooms, roasted garlic, thyme, white wine, truffle butter</p>
+          </div>
+          <span class="menu-item-price">$14</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Mac al Tartufo</p>
+            <p class="menu-item-desc">Cavatappi, four-cheese béchamel, shaved black truffle, toasted breadcrumbs</p>
+          </div>
+          <span class="menu-item-price">$18</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dolci -->
+  <section class="menu-cat" id="dolci">
+    <div class="menu-cat-inner">
+      <div class="menu-cat-header">
+        <span class="section-label fade-in">Something Sweet</span>
+        <h2 class="section-title fade-up delay-1">Dolci</h2>
+        <span class="menu-cat-italian fade-in delay-2">Desserts, made in-house every day</span>
+        <div class="gold-ornament fade-in delay-2" style="max-width:400px;margin:1rem auto 0;"><span>✦</span></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Tiramisù della Casa</p>
+            <p class="menu-item-desc">House-made tiramisù, Savoiardi, mascarpone cream, espresso, dark cocoa</p>
+          </div>
+          <span class="menu-item-price">$14</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Panna Cotta</p>
+            <p class="menu-item-desc">Vanilla bean panna cotta, seasonal berry coulis, candied Sicilian pistachios</p>
+          </div>
+          <span class="menu-item-price">$12</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Cannoli Siciliani</p>
+            <p class="menu-item-desc">Crispy shells filled to order, fresh ricotta cream, pistachios, chocolate chips, candied orange</p>
+          </div>
+          <span class="menu-item-price">$13</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Torta di Cioccolato</p>
+            <p class="menu-item-desc">Warm chocolate lava cake, Valrhona dark chocolate, vanilla gelato, Maldon salt</p>
+          </div>
+          <span class="menu-item-price">$15</span>
+        </div>
+        <div class="menu-item fade-up">
+          <div class="menu-item-body">
+            <p class="menu-item-name">Affogato al Tartufo</p>
+            <p class="menu-item-desc">Fior di latte gelato, double espresso, Amaretto di Saronno</p>
+          </div>
+          <span class="menu-item-price">$11</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <p class="menu-note fade-in">
+    Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.<br />
+    Please inform your server of any dietary restrictions or allergies. Our kitchen handles tree nuts, gluten, dairy, and shellfish.
+  </p>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">LaLa Dee's</div>
+    <p class="footer-tagline">Italian Steakhouse &nbsp;·&nbsp; Est. 2025</p>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">Our Story</a>
+      <a href="reservations.html">Reservations</a>
+    </nav>
+    <p class="footer-address">
+      1st &amp; Main &nbsp;·&nbsp; Old Town Scottsdale, AZ 85251<br />
+      (555) 000-0000 &nbsp;·&nbsp; hello@laladeesitaliana.com
+    </p>
+    <p class="footer-copy">&copy; 2025 LaLa Dee's Italian Steakhouse. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

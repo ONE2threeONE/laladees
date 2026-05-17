@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaLa Dee's | Italian Steakhouse</title>
+  <meta name="description" content="LaLa Dee's Italian Steakhouse in Old Town Scottsdale. Fine Italian dining featuring prime steaks, handmade pasta, and the freshest seafood." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo" aria-label="LaLa Dee's">
+      <span class="nav-logo-script">LaLa Dee's</span>
+      <span class="nav-logo-sub">Italian Steakhouse</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="nav-overlay" aria-hidden="true">
+    <div class="nav-overlay-script">LaLa Dee's</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">Our Story</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('images/restaurant.png'); background-position: center center;"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Benvenuti a</p>
+      <h1 class="hero-name">LaLa Dee's</h1>
+      <div class="hero-rule"></div>
+      <p class="hero-sub">Italian Steakhouse &nbsp;·&nbsp; Pasta &nbsp;·&nbsp; Frutti di Mare</p>
+      <div class="hero-cta">
+        <a href="reservations.html" class="btn btn-fill">Reserve a Table</a>
+        <a href="menu.html" class="btn">View the Menu</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scopri</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="intro">
+    <div class="intro-inner">
+      <span class="intro-script fade-in">La Dolce Vita</span>
+      <div class="gold-ornament fade-in delay-1"><span>✦</span></div>
+      <p class="intro-text fade-up delay-2">
+        Born from a Sicilian grandmother who cooked like the world depended on it
+        and a grandfather from the north of Italy who showed them that it does.
+        At LaLa Dee's, every evening is a celebration of handmade pastas, the finest
+        aged cuts, and ocean-fresh seafood, prepared with the love of two cousins
+        and the traditions of a family that has always known how to feed people.
+      </p>
+      <a href="about.html" class="btn fade-up delay-3" style="margin-top:1rem;">Our Story</a>
+    </div>
+  </section>
+
+  <!-- Featured Trio -->
+  <section class="featured">
+    <div class="featured-header">
+      <span class="section-label fade-in">From the Kitchen</span>
+      <h2 class="section-title fade-up delay-1">A Table Set for Every Desire</h2>
+    </div>
+    <div class="featured-grid">
+      <a href="menu.html#bistecca" class="featured-card">
+        <img
+          src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=80"
+          alt="Prime dry-aged steak" loading="lazy" />
+        <div class="featured-card-overlay">
+          <span class="featured-card-script">Bistecca</span>
+          <p class="featured-card-title">Prime Steaks</p>
+          <p class="featured-card-desc">Dry-aged cuts, Wagyu, and the legendary Bistecca alla Fiorentina. Finished with rosemary, sea salt, and fire.</p>
+        </div>
+      </a>
+      <a href="menu.html#pasta" class="featured-card">
+        <img
+          src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80"
+          alt="Handmade pasta" loading="lazy" />
+        <div class="featured-card-overlay">
+          <span class="featured-card-script">Pasta</span>
+          <p class="featured-card-title">Handmade Pasta</p>
+          <p class="featured-card-desc">Rolled fresh daily. Silky pappardelle with lobster, slow-braised ragù that takes eight hours to become perfect.</p>
+        </div>
+      </a>
+      <a href="menu.html#frutti-di-mare" class="featured-card">
+        <img
+          src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=900&q=80"
+          alt="Fresh seafood" loading="lazy" />
+        <div class="featured-card-overlay">
+          <span class="featured-card-script">Mare</span>
+          <p class="featured-card-title">Frutti di Mare</p>
+          <p class="featured-card-desc">Maine lobster, branzino, and gulf prawns sourced daily. Prepared simply, to honor the sea.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Quote / Ambiance -->
+  <section class="quote-section">
+    <div class="hero-bg" style="background-image: url('images/restaurant.png'); background-position: center 40%;"></div>
+    <div class="hero-overlay"></div>
+    <div class="quote-content">
+      <div class="gold-ornament fade-in"><span>✦</span></div>
+      <blockquote class="fade-up delay-1">&ldquo;La vita è troppo breve per bere vino cattivo.&rdquo;</blockquote>
+      <cite class="fade-in delay-2">Goethe knew. Life is too short to drink bad wine.</cite>
+    </div>
+  </section>
+
+  <!-- Hours & Info -->
+  <section class="hours">
+    <span class="section-label fade-in">Find Us</span>
+    <h2 class="section-title fade-up delay-1" style="margin-top:0.5rem;">Hours &amp; Location</h2>
+    <div class="hours-grid">
+      <div class="hours-item fade-up delay-1">
+        <h4>Dinner</h4>
+        <p>Tuesday through Thursday<br />5:00 PM to 10:00 PM</p>
+        <p style="margin-top:0.8rem;">Friday and Saturday<br />5:00 PM to 11:00 PM</p>
+        <p style="margin-top:0.8rem;">Sunday<br />5:00 PM to 9:00 PM</p>
+      </div>
+      <div class="hours-divider"></div>
+      <div class="hours-item fade-up delay-2">
+        <h4>Location</h4>
+        <p>
+          1st &amp; Main<br />
+          Old Town Scottsdale, AZ 85251<br />
+          <a href="tel:5550000000" style="color:var(--gold);">(555) 000-0000</a>
+        </p>
+      </div>
+      <div class="hours-divider"></div>
+      <div class="hours-item fade-up delay-3">
+        <h4>Reserve</h4>
+        <p>Walk-ins welcome.<br />Reservations strongly<br />recommended.</p>
+        <a href="reservations.html" class="btn" style="margin-top:1.2rem;font-size:0.6rem;">Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">LaLa Dee's</div>
+    <p class="footer-tagline">Italian Steakhouse &nbsp;·&nbsp; Est. 2025</p>
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">Our Story</a>
+      <a href="reservations.html">Reservations</a>
+    </nav>
+    <p class="footer-address">
+      1st &amp; Main &nbsp;·&nbsp; Old Town Scottsdale, AZ 85251<br />
+      (555) 000-0000 &nbsp;·&nbsp; hello@laladeesitaliana.com
+    </p>
+    <p class="footer-copy">&copy; 2025 LaLa Dee's Italian Steakhouse. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
