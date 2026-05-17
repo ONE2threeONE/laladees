@@ -113,9 +113,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: background 0.5s ease, padding 0.4s ease, box-shadow 0.5s ease;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  transition: background 0.5s ease, padding 0.4s ease;
+  will-change: background, padding;
 }
 nav.scrolled {
   background: rgba(14,6,3,0.96);
@@ -174,6 +173,10 @@ nav.scrolled {
 
 .nav-toggle {
   display: none;
+  position: fixed;
+  top: 1.2rem;
+  right: 1.5rem;
+  z-index: 1001;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
@@ -274,11 +277,12 @@ nav.scrolled {
 
 .hero-name {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 11vw, 9rem);
-  letter-spacing: 0.06em;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  letter-spacing: 0.1em;
   color: var(--cream);
   line-height: 1;
-  text-shadow: 0 6px 40px rgba(0,0,0,0.6);
+  text-shadow: 0 4px 30px rgba(0,0,0,0.6);
+  white-space: nowrap;
 }
 
 .hero-rule {
